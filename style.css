@@ -1,0 +1,73 @@
+body {
+    background-color: #000;
+    overflow-y: hidden;
+}
+
+.loadingScreen {
+    z-index: 99999999999;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-content: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+/* ----------------------------------- Start Side menu ----------------------------------------------- */
+
+.logo {
+    width: 50px;
+}
+
+.side-nav-menu .navTab .links ul li {
+    cursor: pointer;
+}
+
+.navTab {
+    display: none;
+}
+
+i {
+   cursor: pointer;
+}
+
+/* ----------------------------------- End Side menu ----------------------------------------------- */
+
+
+
+
+/* <!-- ----------------------------------- Start Start Page ----------------------------------------------- --> */
+
+.meal {
+    cursor: pointer;
+}
+
+.meal-layer {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+}
+
+.meal:hover .meal-layer {
+    top: 0;
+}
+
+.innerLoadingScreen {
+    z-index: 99999999999;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-content: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+/* <!-- ----------------------------------- End Start Page ----------------------------------------------- --> */

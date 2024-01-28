@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Yummy</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div
+        class="loadingScreen">
+        <i class="fa fa-spinner fa-spin fa-5x text-light"></i>
+    </div>
+
+    <!-- ----------------------------------- Start Side menu ----------------------------------------------- -->
+
+    <div class="side-nav-menu min-vh-100 position-fixed top-0 d-flex bg-black z-3">
+        <div class="navTab flex-column justify-content-between p-4 min-vh-100 text-light">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="searchPage()" class="py-2 position-relative">Search</li>
+                    <li onclick="setCategoriesPage(this.value)" class="py-2 position-relative">Categories</li>
+                    <li onclick="setAreaPage()" class="py-2 position-relative">Area</li>
+                    <li onclick="setIngredientsPage(this.value)" class="py-2 position-relative">Ingredients</li>
+                    <li onclick="setContact()" class="py-2 position-relative">Contact Us</li>
+                </ul>
+            </div>
+            <div class="navFooter">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="navHeader d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x" id="openBtn"></i>
+            <!-- <i class="fa-solid close-icon fa-align-justify fa-2x" id="closeBtn"></i> -->
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------------------------- End Side menu ----------------------------------------------- -->
+
+
+
+
+
+
+    <!-- ----------------------------------- Start Side menu Options Pages ----------------------------------------------- -->
+
+
+    <div class="container w-75 d-none" id="searchContainer">
+        <div class="row py-4 ">
+
+        </div>
+    </div>
+
+
+    <!-- ----------------------------------- End Side menu Options Pages ----------------------------------------------- -->
+
+
+
+
+
+    <!-- ----------------------------------- Start Start Page ----------------------------------------------- -->
+
+
+    <div class="min-vh-100">
+        <div
+            class="innerLoadingScreen">
+            <i class="fa fa-spinner fa-spin fa-5x text-light"></i>
+        </div>
+        <div class="container">
+            <div class="row py-5 g-4 " id="rowData">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------- End Start Page ----------------------------------------------- -->
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
